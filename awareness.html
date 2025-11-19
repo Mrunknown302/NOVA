@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reviving Indian Cow Breeds & Sustainability</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; }
+  header { background: #3d6b2f; color: #fff; padding: 20px; text-align: center; font-size: 27px; }
+  section { background: #fff; margin: 20px; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+  h2 { color: #2f4d23; }
+  .video-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 15px; margin-top: 20px; }
+  iframe { width: 100%; height: 200px; border-radius: 10px; }
+  textarea { width: 100%; margin-top: 10px; padding: 12px; border-radius: 6px; border: 1px solid #bbb; }
+  button { padding: 10px 20px; background: #3d6b2f; color: white; border: none; border-radius: 6px; cursor: pointer; margin-top: 10px; }
+  button:hover { background: #315623; }
+  .story { background: #e6f2d7; padding: 10px; border-radius: 6px; margin-top: 10px; }
+</style>
+</head>
+<body>
+
+<header>
+  Reviving Indian Cow Breeds & Promoting Sustainability
+</header>
+
+<!-- Awareness Videos -->
+<section>
+  <h2>Awareness Videos</h2>
+  <div class="video-grid">
+    <iframe src="vid1.mp4" allowfullscreen></iframe>
+    <iframe src="vid2.mp4" allowfullscreen></iframe>
+    <iframe src="vid3.mp4" allowfullscreen></iframe>
+    
+  
+  </div>
+</section>
+
+<!-- Farmers' Success Stories -->
+<section>
+  <h2>Farmers' Success Stories</h2>
+  <div class="story">1. The Return of Gir Cows – The Bhavnagar, Gujarat Success Story
+Background
+
+The Gir cow, once facing a steep decline in numbers due to crossbreeding and lack of awareness, has now become one of India’s most successful revival stories.
+
+What Happened?
+
+In the early 2000s, farmers in Bhavnagar district, Gujarat, began noticing that crossbred cows were:
+
+Prone to diseases
+
+Costly to maintain
+
+Producing diminishing milk output
+
+Less tolerant to heat and local weather
+
+A group of dairy farmers, supported by the Gujarat Milk Marketing Federation (AMUL) and the NDDB (National Dairy Development Board), decided to revive the pure Gir breed, known for:
+
+Natural immunity
+
+High milk yield (up to 12–20 liters/day)
+
+Heat resistance
+
+The Revival Approach
+
+Farmers formed breeders’ associations, practiced:
+
+Selective breeding
+
+Local grazing management
+
+Proper nutrition & preventive healthcare
+
+Clean gaushala systems
+
+Outcome
+
+By 2022–24:
+
+Gir cows became one of the most demanded indigenous breeds worldwide
+
+A healthy Gir cow now sells for ₹1–2 lakh
+
+Pure Gir semen and embryos are exported to Brazil, USA, Mexico, and Russia
+
+Farmers’ income increased by 30–50% due to lower medical costs and higher milk prices
+
+Brazil now has more Gir cows than India — all originally imported from Gujarat
+
+Impact
+
+This success story proved that:
+✔ Indigenous cows can outcompete exotic breeds in sustainability
+✔ Long-term income increases without chemical inputs
+✔ Indian breeds can gain global recognition</div>
+  <div class="story">2. Hallikar Breed Revival – Karnataka Farmer-Led Revolution
+Background
+
+The Hallikar cow, native to Karnataka, is one of India’s oldest draft breeds, known for:
+
+Strength
+
+Stamina
+
+Disease resistance
+
+Low maintenance
+But due to modernization and mechanization, the breed reached a near-threatened state by 2010.
+
+What Happened?
+
+Farmers in Tumakuru and Mandya districts started facing issues:
+
+Expensive tractor fuel
+
+Rising cost of maintaining exotic cows
+
+Lack of natural manure, causing soil degradation
+
+A collective group of farmers revived the Hallikar cow movement supported by:
+
+Karnataka Government’s “Punyakoti Dattu Yojana”
+
+Local gaushalas and NGOs
+
+Hallikar Breed Conservation Society
+
+The Revival Approach
+
+They adopted:
+
+Community breeding centers
+
+Farmer-to-farmer seed bull sharing
+
+Use of cow dung/urine for organic fertilizers and bio-pesticides
+
+Training youth in Hallikar-based natural farming
+
+Outcome
+
+By 2021–24:
+
+Hallikar cow numbers increased by 40%
+
+Farmers reduced chemical fertilizer expenses by 80% using Jeevamrut & Panchagavya
+
+Hallikar bulls are now used for natural farming ploughing, reducing fuel dependency
+
+The soil quality improved drastically within 2 years
+
+Farmers earn additional income by selling:
+
+Organic vegetables
+
+Cow dung cakes
+
+Cow urine pesticide
+
+Impact
+
+The story proved:
+✔ Indian breeds help reduce farming costs
+✔ Soil becomes healthier & more sustainable
+✔ Rural employment increases
+✔ Farmers become less dependent on external inputs
+
+🌿 Conclusion
+
+These two case studies show that reviving Indian cow breeds is not nostalgia — it is a sustainable economic model.
+
+Would you like this in</div>
+
+  <h3>Add Your Own Story</h3>
+  <textarea id="newStory" placeholder="Write your story here..."></textarea>
+  <button onclick="addStory()">Add Story</button>
+
+  <div id="userStories"></div>
+</section>
+
+<script>
+function addStory() {
+  const storyText = document.getElementById("newStory").value.trim();
+  if(!storyText) return alert("Please write a story first!");
+
+  const storyDiv = document.createElement("div");
+  storyDiv.className = "story";
+  storyDiv.textContent = storyText;
+
+  document.getElementById("userStories").appendChild(storyDiv);
+  document.getElementById("newStory").value = "";
+}
+</script>
+
+</body>
+</html>

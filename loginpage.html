@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+}
+
+/* BACKGROUND */
+body {
+    background: linear-gradient(120deg, #ffb347, #ffcc33);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* MAIN CONTAINER */
+.container {
+    width: 420px;
+    background: #fff8e7;
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    animation: slideUp 0.8s ease;
+}
+
+@keyframes slideUp {
+    from { transform: translateY(40px); opacity: 0;}
+    to { transform: translateY(0); opacity: 1;}
+}
+
+/* HEADING */
+h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 26px;
+    font-weight: 700;
+    color: #5d3a00;
+}
+
+/* LOGO */
+.logo {
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+/* INPUT BOXES */
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 18px;
+    border: 2px solid #c59d5f;
+    border-radius: 10px;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+    background: #fffdf6;
+}
+
+input:focus, textarea:focus {
+    border-color: #8b5e00;
+}
+
+/* BUTTON */
+button {
+    width: 100%;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    background: #8b5e00;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: #5c3a00;
+    transform: scale(1.03);
+}
+
+/* NAVIGATION LINKS */
+.nav {
+    margin-top: 12px;
+    text-align: center;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #8b5e00;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hide pages */
+section {
+    display: none;
+}
+
+section.active {
+    display: block;
+}
+</style>
+
+<div class="container">
+
+    <!-- LOGO -->
+    <div class="logo">🐮</div>
+
+    <!-- LOGIN PAGE -->
+    <section id="login" class="active">
+        <h2>Login</h2>
+
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Password">
+
+        <button>Login</button>
+
+        <div class="nav">
+            <a href="signuppage.html" onclick="switchTo('signup')">New User? Sign Up</a><br>
+            <a href="contactus.html" onclick="switchTo('contact')">Contact Us</a>
+        </div>
+    </section>
+
+    
+
+
+</script>
+</body>
+</html>

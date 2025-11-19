@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Government Schemes & Programs - Livestock</title>
+  <style>
+    /* Reset some default styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #2e6b2f;
+      color: #fff;
+      padding: 25px 15px;
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    section {
+      max-width: 900px;
+      background: #fff;
+      margin: 20px auto;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    }
+
+    h2 {
+      color: #2e6b2f;
+      margin-bottom: 15px;
+    }
+
+    /* Accordion styling */
+    .accordion {
+      background-color: #f1f9f1;
+      color: #2e6b2f;
+      cursor: pointer;
+      padding: 18px 20px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 18px;
+      transition: background-color 0.3s;
+      border-left: 6px solid #2e6b2f;
+      margin-bottom: 10px;
+      border-radius: 6px;
+    }
+
+    .accordion:hover {
+      background-color: #e4f2e4;
+    }
+
+    .accordion.active {
+      background-color: #d8ecd8;
+    }
+
+    .panel {
+      padding: 0 20px 15px 20px;
+      display: none;
+      background-color: #fff;
+      border-left: 6px solid #2e6b2f;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+
+    .panel ul {
+      padding-left: 20px;
+      margin-top: 10px;
+    }
+
+    .panel li {
+      margin-bottom: 8px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #2e6b2f;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      margin-top: 30px;
+    }
+
+    footer a {
+      color: #fff;
+      text-decoration: underline;
+    }
+
+    footer a:hover {
+      color: #d1f0d1;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        font-size: 22px;
+      }
+      .accordion {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    Government Schemes & Programs - Livestock
+  </header>
+
+  <section>
+    <h2>Overview</h2>
+    <p>The following government schemes focus on enhancing livestock productivity, promoting entrepreneurship, and conserving India's indigenous breeds.</p>
+
+    <!-- Accordion Sections -->
+    <button class="accordion">1. Government Schemes (Focusing on Livestock)</button>
+    <div class="panel">
+      <p>The umbrella program for livestock development is the <strong>Rashtriya Pashudhan Vikas Yojana (RPVY)</strong>, integrating key initiatives to enhance productivity, promote entrepreneurship, and improve animal health. Programs listed below fall under RPVY or similar central schemes.</p>
+    </div>
+
+    <button class="accordion">2. 💰 Animal Husbandry Subsidies</button>
+    <div class="panel">
+      <ul>
+        <li><strong>Entrepreneurship Development and Employment Generation (EDEG):</strong> Credit-linked back-ended subsidies for poultry, sheep, goat, and pig farming ventures.<br><strong>Goal:</strong> Establish backward and forward linkages and generate employment.</li>
+        <li><strong>National Livestock Mission (NLM):</strong> Subsidies for small ruminant breeding farms, feed and fodder development, and technology transfer.<br><strong>Subsidy:</strong> Up to 50% of project cost for individuals, Farmer Producer Organizations (FPOs), and entrepreneurs.</li>
+      </ul>
+    </div>
+
+    <button class="accordion">3. 🥛 Dairy Startup Yojanas</button>
+    <div class="panel">
+      <ul>
+        <li><strong>Dairy Entrepreneurship Development Scheme (DEDS):</strong> Credit-linked subsidy for small dairy units (2–10 animals), milk handling/chilling equipment, and dairy product units.</li>
+        <li><strong>Subsidy Structure:</strong> 25% of capital cost for general category, 33.33% for SC/ST/Women.</li>
+        <li><strong>Goal:</strong> Upgrade technology and bring structural changes in the unorganized dairy sector.</li>
+      </ul>
+    </div>
+
+    <button class="accordion">4. 🧬 Breed Improvement Programs</button>
+    <div class="panel">
+      <ul>
+        <li><strong>Rashtriya Gokul Mission (RGM):</strong> Focused on indigenous cattle development and conservation.</li>
+        <li><strong>Goals:</strong>
+          <ul>
+            <li>Genetic Upgradation: Breed improvement for milch and draught breeds.</li>
+            <li>Infrastructure: Establish Gokul Grams and National Kamdhenu Breeding Centres.</li>
+            <li>Artificial Insemination (AI): Use high-quality, sex-sorted semen to conserve female calves and indigenous bloodlines.</li>
+            <li>Field Performance Recording (FPR): Maintain records to identify superior germplasm.</li>
+          </ul>
+        </li>
+        <li><strong>National Programme for Bovine Breeding (NPBB):</strong> Mobile AI Labs and expansion of AI network to provide superior breeding services at farmers' doorsteps.</li>
+      </ul>
+    </div>
+
+  </section>
+
+  <footer>
+    &copy; 2025 Government Schemes & Programs. All rights reserved. | Visit the 
+    <a href="https://www.dahd.nic.in/" target="_blank">Department of Animal Husbandry & Dairying</a> for more info.
+  </footer>
+
+  <script>
+    // Accordion functionality
+    const accordions = document.getElementsByClassName("accordion");
+    for (let i = 0; i < accordions.length; i++) {
+      accordions[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        const panel = this.nextElementSibling;
+        panel.style.display = (panel.style.display === "block") ? "none" : "block";
+      });
+    }
+  </script>
+
+</body>
+</html>
